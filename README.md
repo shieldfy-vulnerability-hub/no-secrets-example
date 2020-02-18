@@ -17,11 +17,5 @@ const s3 = new AWS.S3({
 2. secret in `index.vuln.ts` line `1`
 
 ```js
-const AWS = require('aws-sdk');
-
-const s3 = new AWS.S3({
-    accessKeyId: 'AKIAIOSFODNN7EXAMPLE',
-    secretAccessKey: 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY',
-    region: 'us-east-1'
-})
+const secret: string = 'AKIAIOSFODNN7EXAMPLE'
 ```
